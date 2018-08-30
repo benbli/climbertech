@@ -1,0 +1,155 @@
+.footer {
+  padding: 3.2rem 2.4rem;
+}
+
+/* General */
+.fContainer {
+  max-width: 140rem;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+@media (min-width: 48em) {
+  .fContainerBreakPoints {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@media (min-width: 60em) {
+  .fContainerBreakPoints {
+    position: relative;
+    z-index: 700;
+    background: linear-gradient(180deg, rgba(244, 246, 248, 0), #f4f6f8 60%);
+  }
+}
+
+/* Contact */
+.contactContainer {
+  padding: .8rem 0;
+  font-size: 1.4rem;
+  color: #161d25;
+}
+
+.contactContainer a {
+  display: inline-block;
+  margin: 0 2.4rem 4rem;
+  color: #161d25;
+  transition: color .24s cubic-bezier(.64,0,.35,1);
+}
+
+.contactContainer a:hover {
+  color: #202e78;
+}
+
+.contactContainer a:active, .contactContainer a:focus {
+  color: #5c6ac4;
+}
+
+@media (max-width: 47.99em) {
+  .contactContainer {
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .contactContainer {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 1.6rem;
+  }
+
+  .contactContainer a {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+/* Social */
+.socialContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.socialContainer> li {
+  flex: 0 0 auto;
+}
+
+.socialContainer> li+li {
+  margin-left: 2.4rem;
+}
+
+/* Contact */
+.iconContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.iconContainer> * {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.iconContainerBorder {
+  border: .1rem solid #c4cdd5;
+  color: #c4cdd5;
+  box-shadow: inset 0 0 0 0.1rem rgba(92,106,196,0), inset 0 0.1rem 0.2rem 0 rgba(196,205,213,.2);
+}
+
+a> .iconContainerBorder {
+  transition-property: color, border;
+  transition-duration: .24s;
+  transition-timing-function: cubic-bezier(0.64,0,.35,1);
+}
+
+.iconContainerBorder:hover {
+  border: 0.1rem solid #202e78;
+}
+
+.iconContainerBorder:active, .iconContainerBorder:focus {
+  border: 0.1rem solid #5c6ac4;
+}
+
+.iconHolder {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.svgWrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.svgLogo {
+  fill: currentColor;
+}
+
+.fbIconHolder {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.fbSvgWrapper svg {
+  width: 100%;
+  height: auto;
+}
