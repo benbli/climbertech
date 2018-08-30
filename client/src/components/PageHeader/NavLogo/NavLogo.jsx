@@ -6,7 +6,7 @@ const NavLogo = props => {
     <a className={`${styles.logoAnchor} ${styles.logoWrapper}`}
       aria-label="Climber Tech, Back to Home" 
       href="/">
-      <img className={styles.logo} src="/Users/Yadleo/Desktop/climberTech/climbertech/client/dist/img/LogoCT.png" alt="Climber Tech"/>
+      <img className={styles.logo} src="/Users/Yadleo/Desktop/CT2/climbertech/img/LogoCT.png" alt="Climber Tech"/>
     </a>
   )
 }
