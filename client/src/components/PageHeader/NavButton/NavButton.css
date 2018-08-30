@@ -1,0 +1,161 @@
+.navButton {
+  position: absolute;
+  z-index: 500;
+  top: .8rem;
+  left: .8rem;
+  padding: .8rem;
+  width: 4rem;
+  height: 3.6rem;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+  animation: navButton .48s cubic-bezier(.64,0,0.35,1) forwards;
+}
+
+.navButtonContainer {
+  position: relative;
+  display: block;
+  width: 2.4rem;
+  height: 2rem;
+}
+
+.navButtonTopLine, .navButtonMidLine, .navButtonBottomLine {
+  position: absolute;
+  left: 0;
+  height: .2rem;
+  background-color: #161d25;
+  border-radius: .2rem;
+  animation-duration: .24s;
+  animation-timing-function: cubic-bezier(.64,0,.35,1);
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: top,transform,background-color;
+  width: 100%;
+  transition: background-color .24s cubic-bezier(.64,0,.35,1);
+}
+
+.navButtonTopLine {
+  top: 0;
+  animation-name: navButtonTopLineExpand;
+}
+
+.navButtonMidLine {
+  top: .9rem;
+  width: 75%;
+  animation-name: navButtonMidLineExpand;
+  transition: none;
+}
+
+.navButtonBottomLine {
+  animation-name: navButtonBottomLineExpand;
+}
+
+.navButtonExpanded .navButtonTopLine,
+.navButtonExpanded .navButtonBottomLine {
+  background-color: #1c2260;
+}
+
+.navButtonExpanded .navButtonTopLine {
+  animation-name: navButtonTopLineShrink;
+}
+
+.navButtonExpanded .navButtonMidLine {
+  animation-name: navButtonMidLineShrink;
+}
+
+.navButtonExpanded .navButtonBottomLine {
+  animation-name: navButtonBottomLineShrink;
+}
+
+@media (min-width: 60em) {
+  .navButton {
+    display: none;
+  }
+}
+
+/* animation */
+@keyframes navButton {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navButtonTopLineExpand {
+  0% {
+    top: .9rem;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: .9rem;
+    transform: rotate(0);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes navButtonMidLineExpand {
+  0%, 25% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navButtonBottomLineExpand {
+  0% {
+    bottom: .9rem;
+    transform: rotate(-45deg);
+  }
+  50% {
+    bottom: .9rem;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: -.1rem;
+    transform: rotate(0);
+  }
+}
+
+@keyframes navButtonTopLineShrink {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: .9rem;
+    transform: rotate(0);
+  }
+  100% {
+    top: .9rem;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes navButtonMidLineShrink {
+  0%, 25% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes navButtonBottomLineShrink {
+  0% {
+    bottom: -.1rem;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: .9rem;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: .9rem;
+    transform: rotate(-45deg);
+  }
+}

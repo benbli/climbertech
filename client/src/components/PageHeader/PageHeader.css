@@ -1,0 +1,58 @@
+.pageHeader {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  height: 7.2rem;
+}
+
+.headerContainer {
+  max-width: 140rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.headerContainer>* {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 59.99em) {
+  .pageHeader {
+    background-color: #f4f6f8;
+  }
+
+  .headerContainer {
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navigation {
+    position: absolute;
+    z-index: 300;
+    top: .8rem;
+    right: 0;
+    left: -1.6rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .pageHeader {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    height: 12rem;
+  }
+
+  .headerContainer {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}

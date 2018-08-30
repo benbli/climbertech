@@ -10,7 +10,7 @@ const HomeAboutPreviews = props => {
             <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(227,241,223)"}}>
               <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
                 {/* svg goes here */}
-                Icon
+                <img src="https://png.icons8.com/ios/50/000000/climbing.png" alt="Climber"></img>
               </span>
             </div>
           </div>
@@ -31,7 +31,7 @@ const HomeAboutPreviews = props => {
             <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(235,245,250)"}}>
               <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
                 {/* svg goes here */}
-                Icon
+                <img src="https://png.icons8.com/ios/50/000000/waypoint-map.png" alt="Setter"></img>
               </span>
             </div>
           </div>
@@ -51,7 +51,7 @@ const HomeAboutPreviews = props => {
             <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(246,240,253)"}}>
               <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
                 {/* svg goes here */}
-                Icon
+                <img src="https://png.icons8.com/ios/50/000000/garage-closed.png" alt="Gym"></img>
               </span>
             </div>
           </div>
@@ -71,7 +71,7 @@ const HomeAboutPreviews = props => {
             <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(252,241,205)"}}>
               <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
                 {/* svg goes here */}
-                Icon
+                <img src="https://png.icons8.com/ios/50/000000/calendar.png" alt="Events"></img>
               </span>
             </div>
           </div>

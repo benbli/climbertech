@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import NavHead from "./NavHeader/NavHead/NavHead.jsx";
+import PageHeader from "./PageHeader/PageHeader";
 import Home from "./Home/Home";
 import Footer from "./Footer/Footer";
+import SVG from "./SVG/SVG";
 import styles from "./App.css";
 
 export default class App extends Component {
@@ -16,12 +17,15 @@ export default class App extends Component {
     return(
       <div className={styles.appFrame}>
       {/* href should link to homepage*/}
-        <a href="" className={styles.skipLink}></a>
-        {/* <NavHead /> */}
-        
+        <a href="#mainContent" className={styles.skipLink}>Skip to main content</a>
+
+        <PageHeader />
+
         <Home />
 
         <Footer />
+
+        <SVG />
       </div>
     )
   }

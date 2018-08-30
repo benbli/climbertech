@@ -2,8 +2,15 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html, body {
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
+  margin: 0;
+	padding: 0;
+  border: 0;
+}
 
-html, body, div, span, applet, object, iframe,
+div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -16,10 +23,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+  font-size: 100%;
+  font-weight: 300;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -68,6 +73,10 @@ table {
   height: 100%
 }
 
+:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 html {
   height: 100%;
   font-size: 62.5%;
@@ -109,7 +118,17 @@ a:focus {
   color: #f4f5f6;
   background-color: #5c6ac4;
 }
+button, input, select, textarea {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
 
-svg {
+button:focus, input, input:focus, input:invalid {
+  box-shadow: none;
+}
+
+img, svg {
   display: block;
 }

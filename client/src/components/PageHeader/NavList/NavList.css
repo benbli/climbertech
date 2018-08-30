@@ -1,0 +1,84 @@
+.navList {
+  float: left;
+}
+
+.navListEntryAnchor {
+  max-width: 60rem;
+  margin-bottom: .8em;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-bottom: 0;
+  display: block;
+  color: #1c2260;
+}
+
+@media (max-width: 59.99em) {
+  .navList {
+    width: 5.6rem;
+    height: 5.2rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: .6rem;
+    box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, .2);
+    background-color: #fff;
+    transition: 
+      width .24s  cubic-bezier(.64,0,.35,1),
+      height .24s  cubic-bezier(.64,0,.35,1),
+      opacity .12s  cubic-bezier(.64,0,.35,1),
+      visibility .12s  cubic-bezier(.64,0,.35,1);
+  }
+
+  .navListShown {
+    width: 13.3rem;
+    height: 25.6rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .navListContainer {
+    padding-top: 4.8rem;
+    padding-bottom: .8rem;
+  }
+
+  .navListEntryAnchor {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 4rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 60em) {
+  .navList {
+    margin-right: 1.6rem;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+
+  .navListContainer {
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+  }
+
+  .navListEntryAnchor {
+    position: relative;
+    padding: 5.6rem 1.6rem 1.6rem;
+    color: #1a222b;
+    transition: color .24s cubic-bezier(.64,0,.35,1);
+  }
+}

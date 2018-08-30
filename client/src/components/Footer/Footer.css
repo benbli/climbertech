@@ -139,3 +139,17 @@ a> .iconContainerBorder {
   height: 100%;
 }
 
+.svgLogo {
+  fill: currentColor;
+}
+
+.fbIconHolder {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.fbSvgWrapper svg {
+  width: 100%;
+  height: auto;
+}
