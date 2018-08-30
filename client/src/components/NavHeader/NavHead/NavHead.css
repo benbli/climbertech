@@ -1,0 +1,10 @@
+.promoBanner {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}

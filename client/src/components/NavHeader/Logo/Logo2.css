@@ -1,0 +1,14 @@
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid #c4cdd5;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logo {
+  width: 3.5rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  background-color: aquamarine;
+  margin: 0.5em;
+}
