@@ -606,7 +606,13 @@ a> .Footer__iconContainerBorder___22fkK {
 
 @media (-webkit-max-device-pixel-ratio: 2.99) and (max-width: 41.6775em), (max-resolution: 2.99dppx) and (max-width:41.6775em) {
   .HomeHero__hero___3vHif {
-    background-image: url(http://res.cloudinary.com/dqhe5ks7u/image/upload/c_scale,w_826/v1533943216/ClimberTech/Header_Mobile.jpg);
+    background-image: url(https://res.cloudinary.com/dqhe5ks7u/image/upload/c_scale,w_826/v1533943216/ClimberTech/Header_Mobile.jpg);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) and (max-width: 41.6775em), (max-width: 41.6775em) and (min-resolution: 3dppx) {
+  .HomeHero__hero___3vHif {
+    background-image: url(https://res.cloudinary.com/dqhe5ks7u/image/upload/c_scale,w_826/v1533943216/ClimberTech/Header_Mobile.jpg);
   }
 }
 
@@ -636,7 +642,7 @@ a> .Footer__iconContainerBorder___22fkK {
 
 @media (min-width: 41.6875em) {
   .HomeHero__hero___3vHif {
-    background-image: url(http://res.cloudinary.com/dqhe5ks7u/image/upload/c_scale,w_2688/v1533939376/ClimberTech/Header_Desktop.jpg);
+    background-image: url(https://res.cloudinary.com/dqhe5ks7u/image/upload/c_scale,w_2688/v1533939376/ClimberTech/Header_Desktop.jpg);
   }
 }
 
