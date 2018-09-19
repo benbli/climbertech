@@ -610,7 +610,31 @@
   transition: color .24s cubic-bezier(.64,0,.35,1);
   line-height: 1.4;
 }
-.Footer__footer___yxWuK {
+.Climbers__mainContainer___-xwr0 {
+  visibility: visible;
+}
+
+.Climbers__mainContent___M3Py3 {
+  max-width: 140rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Climbers__componentsSection___e93Aa {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 84em) {
+  .Climbers__componentsSectionDesktop___14jTz {
+    overflow: hidden;
+    border-radius: .6rem;
+    box-shadow: 0 1.2rem 3.6rem rgba(0,0,0,.2);
+  }
+}.Footer__footer___yxWuK {
   padding: 3.2rem 2.4rem;
 }
 

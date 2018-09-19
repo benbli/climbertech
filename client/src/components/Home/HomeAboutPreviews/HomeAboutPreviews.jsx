@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./HomeAboutPreviews.css";
 
 const HomeAboutPreviews = props => {
@@ -23,7 +24,8 @@ const HomeAboutPreviews = props => {
           <p className={styles.summary}>
             Summary of how this app serves climbers...
           </p>
-          <a className={styles.redirect} href="router endpoint">Find out more</a>
+          {/* <a className={styles.redirect} href="router endpoint">Find out more</a> */}
+          <Link to='/climbers' className={styles.redirect}>Find out more</Link>
         </li>
 
         <li className={styles.previewItem}>
