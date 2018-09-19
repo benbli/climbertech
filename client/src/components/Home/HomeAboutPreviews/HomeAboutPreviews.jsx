@@ -22,10 +22,9 @@ const HomeAboutPreviews = props => {
             </h4>
           </div>
           <p className={styles.summary}>
-            Summary of how this app serves climbers...
+            Learn how Climber Tech transforms your climbing experience.
           </p>
-          {/* <a className={styles.redirect} href="router endpoint">Find out more</a> */}
-          <Link to='/climbers' className={styles.redirect}>Find out more</Link>
+          <Link to='/climbers' className={styles.redirect}>View Climber Features</Link>
         </li>
 
         <li className={styles.previewItem}>
@@ -43,9 +42,9 @@ const HomeAboutPreviews = props => {
             </h4>
           </div>
           <p className={styles.summary}>
-            Summary of how this app serves setters...
+            Find out how we generate portfolios for setters and expand their audience.
           </p>
-          <a className={styles.redirect} href="router endpoint">Find out more</a>
+          <Link to='/setters' className={styles.redirect}>View Setter Features</Link>
         </li>
 
         <li className={styles.previewItem}>
@@ -63,9 +62,9 @@ const HomeAboutPreviews = props => {
             </h4>
           </div>
           <p className={styles.summary}>
-            Summary of how this app serves Climbing Gyms...
+            Use Climber Tech for detailed route rotation schedule and host events.
           </p>
-          <a className={styles.redirect} href="router endpoint">Find out more</a>
+          <Link to='/gyms' className={styles.redirect}>View Gyms Features</Link>
         </li>
 
         <li className={styles.previewItem}>
@@ -83,9 +82,9 @@ const HomeAboutPreviews = props => {
             </h4>
           </div>
           <p className={styles.summary}>
-            Summary of how this app serves Climbing Events...
+            See how Climber Tech and provide live score tracking and eliminate paper waste.
           </p>
-          <a className={styles.redirect} href="router endpoint">Find out more</a>
+          <Link to='/climbingevents' className={styles.redirect}>View Event Features</Link>
         </li>
 
       </ul>

@@ -7,7 +7,7 @@ const HomeHero = props => {
       <div className={styles.heroContent}>
         <h1 className={styles.brandName}>Climber Tech</h1>
         <div className={styles.description}>
-          An app designed for climbers by climbers.
+          Track your climbing activities with Climber Tech. Record and share your Beta!
         </div>
       </div>
     </header>

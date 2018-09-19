@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import styles from "./NavList.css";
 
 export default class NavList extends Component {
   constructor(props) {
     super(props),
     this.state = {
+      navListEntries: ['about', 'climbers', 'setters', 'gyms', 'events']
     }
   }
 
@@ -17,25 +19,7 @@ export default class NavList extends Component {
         aria-hidden={!this.props.expanded}
         aria-label="Primary navigation">
         <ul className={styles.navListContainer}>
-          <li className={styles.navListEntry}>
-            <a href="" className={styles.navListEntryAnchor}>about</a>
-          </li>
-
-          <li className={styles.navListEntry}>
-            <a href="" className={styles.navListEntryAnchor}>climbers</a>
-          </li>
-
-          <li className={styles.navListEntry}>
-            <a href="" className={styles.navListEntryAnchor}>setters</a>
-          </li>
-
-          <li className={styles.navListEntry}>
-            <a href="" className={styles.navListEntryAnchor}>gyms</a>
-          </li>
-
-          <li className={styles.navListEntry}>
-            <a href="" className={styles.navListEntryAnchor}>events</a>
-          </li>
+          {this.state.navListEntries.map(entry => <li className={styles.navListEntry}><Link to={`/{entry}`} className={styles.navListEntryAnchor}>{entry}</Link></li>)}
         </ul>
       </nav>
     )
