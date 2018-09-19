@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import PageHeader from "./PageHeader/PageHeader";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -21,7 +21,7 @@ export default class App extends Component {
 
   render() {
     return(
-      <BrowserRouter>
+      <HashRouter>
         <div className={styles.appFrame}>
         {/* href should link to homepage*/}
           <a href="#mainContent" className={styles.skipLink}>Skip to main content</a>
@@ -39,7 +39,7 @@ export default class App extends Component {
           <Footer />
           <SVG />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
