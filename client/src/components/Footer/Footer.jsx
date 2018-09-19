@@ -8,19 +8,19 @@ const Footer = props => {
       <div className={`${styles.fContainer} ${styles.fContainerBreakPoints}`}> 
       {/* contacts */}
         <p className={styles.contactContainer}>
-          <a href="http://climber.tech" 
+          <a href="/" 
             data-event-label="Home"
             data-event-category="Footer Link">
             Home
           </a>
 
-          <a href="http://climber.tech"
+          <a href="mailto:climbertechllc@gmail"
             data-event-label="Contact"
             data-event-category="Footer Link">
             Contact
           </a>
 
-          <a href="mailto:dlai813@gmail.com"
+          <a href="mailto:climbertechllc@gmail"
             data-event-label="Feed Back"
             data-event-category="Footer Link">
             Feedback

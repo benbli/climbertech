@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import styles from "./Climbers.css"
+import styles from "./Gyms.css"
 
-export default class Climbers extends Component {
+export default class Gyms extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,7 @@ export default class Climbers extends Component {
           <section className={`${styles.componentsSection} ${styles.componentsSectionDesktop}`}>
             <div className={styles.tempContainer}>
               <h2 className={styles.tempText}>
-                Climbers Features Coming Soon
+                Gyms Features Coming Soon
               </h2>
             </div>
           </section>

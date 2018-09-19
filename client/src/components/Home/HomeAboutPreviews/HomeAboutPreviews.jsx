@@ -69,7 +69,7 @@ const HomeAboutPreviews = props => {
 
         <li className={styles.previewItem}>
           <div className={styles.iconContainer}>
-            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(44, 116, 152)"}}>
+            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(44, 200, 100)"}}>
               <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
                 {/* svg goes here */}
                 <img src="https://png.icons8.com/ios/50/000000/calendar.png" alt="Events"></img>
@@ -84,7 +84,7 @@ const HomeAboutPreviews = props => {
           <p className={styles.summary}>
             See how Climber Tech and provide live score tracking and eliminate paper waste.
           </p>
-          <Link to='/climbingevents' className={styles.redirect}>View Event Features</Link>
+          <Link to='/events' className={styles.redirect}>View Event Features</Link>
         </li>
 
       </ul>

@@ -19,7 +19,7 @@ export default class NavList extends Component {
         aria-hidden={!this.props.expanded}
         aria-label="Primary navigation">
         <ul className={styles.navListContainer}>
-          {this.state.navListEntries.map(entry => <li className={styles.navListEntry}><Link to={`/{entry}`} className={styles.navListEntryAnchor}>{entry}</Link></li>)}
+          {this.state.navListEntries.map(entry => <li className={styles.navListEntry}><Link to={`/${entry}`} className={styles.navListEntryAnchor}>{entry}</Link></li>)}
         </ul>
       </nav>
     )
