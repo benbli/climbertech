@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w & budo ./bundle.js --live"
   },
   "repository": "https://yadleo@bitbucket.org/benbli/climbertech.git",
   "author": "Daniel Lai <dlai813@gmail.com>",
