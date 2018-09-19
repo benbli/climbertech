@@ -82,7 +82,7 @@ const HomeAboutPreviews = props => {
             </h4>
           </div>
           <p className={styles.summary}>
-            See how Climber Tech and provide live score tracking and eliminate paper waste.
+            See how Climber Tech provides live score tracking and eliminates paper waste.
           </p>
           <Link to='/events' className={styles.redirect}>View Event Features</Link>
         </li>

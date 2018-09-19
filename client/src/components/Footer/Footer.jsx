@@ -20,11 +20,11 @@ const Footer = props => {
             Contact
           </a>
 
-          <a href="mailto:climbertechllc@gmail"
+          {/* <a href="mailto:climbertechllc@gmail"
             data-event-label="Feed Back"
             data-event-category="Footer Link">
             Feedback
-          </a>
+          </a> */}
         </p>
       {/* social icons */}
         <ul className={styles.socialContainer}>
