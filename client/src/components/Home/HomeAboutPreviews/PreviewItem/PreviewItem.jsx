@@ -14,7 +14,6 @@ const PreviewItem = props => {
         </span>
       </div>
     </div>
-
     <div className={styles.titleContainer}>
       <h4 className={styles.title}>
         {item.title}
