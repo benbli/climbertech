@@ -1,95 +1,80 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styles from "./HomeAboutPreviews.css";
 
-const HomeAboutPreviews = props => {
-  return(
-    <div className={styles.container}>
-      <ul className={styles.previewList}>
-        <li className={styles.previewItem}>
-          <div className={styles.iconContainer}>
-            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(172, 236,234)"}}>
-              <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
-                {/* svg goes here */}
-                <img src="https://png.icons8.com/ios/50/000000/climbing.png" alt="Climber"></img>
-              </span>
-            </div>
-          </div>
+export default class HomeAboutPreviews extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      previewItems: [
+        {
+          name: "Climber",
+          title: "Climbers",
+          bgColor: "rgb(172, 236, 234)",
+          imgSrc: "https://png.icons8.com/ios/50/000000/climbing.png",
+          summary: "Learn how Climber Tech transforms your climbing experience.",
+          path: "/climbers"
+        },
+        {
+          name: "Setter",
+          title: "Setters",
+          bgColor: "rgb(71, 237, 211)",
+          imgSrc: "https://png.icons8.com/ios/50/000000/waypoint-map.png",
+          summary: "Find out how we generate portfolios for setters and expand their audience.",
+          path: "/setters",
+        },
+        {
+          name: "Gym",
+          title: "Gyms",
+          bgColor: "rgb(56, 188, 196)",
+          imgSrc: "https://png.icons8.com/ios/50/000000/garage-closed.png",
+          summary: "Use Climber Tech for detailed route rotation schedule and host events.",
+          path: "/gyms",
+        },
+        {
+          name: "Event",
+          title: "Events",
+          bgColor: "rgb(44, 200, 100)",
+          imgSrc: "https://png.icons8.com/ios/50/000000/calendar.png",
+          summary: "See how Climber Tech provides live score tracking and eliminates paper waste.",
+          path: "/events",
+        },
+      ]
+    }
+  }
 
-          <div className={styles.titleContainer}>
-            <h4 className={styles.title}>
-              Climbers
-            </h4>
-          </div>
-          <p className={styles.summary}>
-            Learn how Climber Tech transforms your climbing experience.
-          </p>
-          <Link to='/climbers' className={styles.redirect}>View Climber Features</Link>
-        </li>
+  render() {
+    return(
+      <div className={styles.container}>
+        <ul className={styles.previewList}>
 
-        <li className={styles.previewItem}>
-          <div className={styles.iconContainer}>
-            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(71, 237, 211)"}}>
-              <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
-                {/* svg goes here */}
-                <img src="https://png.icons8.com/ios/50/000000/waypoint-map.png" alt="Setter"></img>
-              </span>
-            </div>
-          </div>
-          <div className={styles.titleContainer}>
-            <h4 className={styles.title}>
-              Setters
-            </h4>
-          </div>
-          <p className={styles.summary}>
-            Find out how we generate portfolios for setters and expand their audience.
-          </p>
-          <Link to='/setters' className={styles.redirect}>View Setter Features</Link>
-        </li>
+          {this.state.previewItems.map((item, key) => {
+            return (
+              <li className={styles.previewItem} key={key}>
+              <div className={styles.iconContainer}>
+                <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: item.bgColor}}>
+                  <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
+                    {/* svg goes here */}
+                    <img src={item.imgSrc} alt={item.name}></img>
+                  </span>
+                </div>
+              </div>
+  
+              <div className={styles.titleContainer}>
+                <h4 className={styles.title}>
+                  {item.title}
+                </h4>
+              </div>
+              <p className={styles.summary}>
+                {item.summary}
+              </p>
+              <Link to={item.path} className={styles.redirect}>View {item.name} Features</Link>
+            </li>  
+            );
+          })}
 
-        <li className={styles.previewItem}>
-          <div className={styles.iconContainer}>
-            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(56, 188, 196)"}}>
-              <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
-                {/* svg goes here */}
-                <img src="https://png.icons8.com/ios/50/000000/garage-closed.png" alt="Gym"></img>
-              </span>
-            </div>
-          </div>
-          <div className={styles.titleContainer}>
-            <h4 className={styles.title}>
-              Gyms
-            </h4>
-          </div>
-          <p className={styles.summary}>
-            Use Climber Tech for detailed route rotation schedule and host events.
-          </p>
-          <Link to='/gyms' className={styles.redirect}>View Gyms Features</Link>
-        </li>
-
-        <li className={styles.previewItem}>
-          <div className={styles.iconContainer}>
-            <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: "rgb(44, 200, 100)"}}>
-              <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
-                {/* svg goes here */}
-                <img src="https://png.icons8.com/ios/50/000000/calendar.png" alt="Events"></img>
-              </span>
-            </div>
-          </div>
-          <div className={styles.titleContainer}>
-            <h4 className={styles.title}>
-              Climbing Events
-            </h4>
-          </div>
-          <p className={styles.summary}>
-            See how Climber Tech provides live score tracking and eliminates paper waste.
-          </p>
-          <Link to='/events' className={styles.redirect}>View Event Features</Link>
-        </li>
-
-      </ul>
-    </div>
-  )
+        </ul>
+      </div>
+    )
+  }
 }
-
-export default HomeAboutPreviews;
