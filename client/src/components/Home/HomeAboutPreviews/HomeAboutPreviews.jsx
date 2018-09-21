@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import styles from "./HomeAboutPreviews.css";
+import PreviewItem from "./PreviewItem/PreviewItem";
 
 export default class HomeAboutPreviews extends Component {
   constructor(props) {
@@ -47,32 +47,7 @@ export default class HomeAboutPreviews extends Component {
     return(
       <div className={styles.container}>
         <ul className={styles.previewList}>
-
-          {this.state.previewItems.map((item, key) => {
-            return (
-              <li className={styles.previewItem} key={key}>
-              <div className={styles.iconContainer}>
-                <div className={styles.iconContainerGeneral} style={{color:"rgb(33, 43, 54)", backgroundColor: item.bgColor}}>
-                  <span className={`${styles.iconHolder} ${styles.svgWrapper}`}>
-                    {/* svg goes here */}
-                    <img src={item.imgSrc} alt={item.name}></img>
-                  </span>
-                </div>
-              </div>
-  
-              <div className={styles.titleContainer}>
-                <h4 className={styles.title}>
-                  {item.title}
-                </h4>
-              </div>
-              <p className={styles.summary}>
-                {item.summary}
-              </p>
-              <Link to={item.path} className={styles.redirect}>View {item.name} Features</Link>
-            </li>  
-            );
-          })}
-
+          {this.state.previewItems.map((item, key) => <PreviewItem item={item} key={key}/>)}
         </ul>
       </div>
     )
