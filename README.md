@@ -1,7 +1,7 @@
 # ClimberTech
 
 Static webpage for climbertech.llc
-An for climbers by climbers.
+An app for climbers by climbers.
 
 [View the site](https://climber.tech)
 
